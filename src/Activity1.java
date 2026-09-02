@@ -1,18 +1,21 @@
 import java.util.Scanner;
 
 public class Activity1 {
-    public void greetUser(){
-        Scanner sc = new Scanner(System.in);
+
+    public void greetUser(Scanner sc) {
+
         System.out.print("Enter Name: ");
         String name = sc.nextLine();
+
         System.out.print("Birth Year: ");
-        int byear = sc.nextInt();
+        int birthYear = sc.nextInt();
+
         System.out.print("Enter Gender: ");
-        String gend = sc.next();
+        String gender = sc.next();
 
         System.out.println("=============================");
-        System.out.println("Hello, "+name+"! Welcome to Java");
-        System.out.println("You were born in "+byear+" and your gender is "+gend);
-
+        System.out.println("Hello, " + name + "! Welcome to Java");
+        System.out.println("You were born in " + birthYear
+                + " and your gender is " + gender);
     }
 }
